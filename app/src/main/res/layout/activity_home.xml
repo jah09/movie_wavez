@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#090607"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/textViewHeaderTitle"
+        android:layout_width="wrap_content"
+        android:fontFamily="monospace"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="124dp"
+        android:text="MovieWavez"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:id="@+id/inputLayoutId"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/linear_style"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeaderTitle">
+
+        <EditText
+            android:id="@+id/editTextMovieName"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:ems="10"
+
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center_vertical"
+            android:hint="Movie name"
+            android:inputType="text"
+            android:textColor="#F3ECEE"
+            android:textColorHint="#F3ECEE"
+            android:textCursorDrawable="@null"
+            android:textSize="22sp"
+
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:id="@+id/imageViewButtonSearch"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/search_alt_svgrepo_com" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/movieListView"
+        android:layout_width="409dp"
+        android:layout_height="575dp"
+        android:divider="#090607"
+        android:dividerHeight="10dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutId" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewHeaderTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/film_svgrepo_com" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090607"
+    tools:context=".MainJava">
+
+    <LinearLayout
+        android:id="@+id/textViewAppName"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="134dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="681dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="MovieWavez"
+
+            android:textColor="#F3ECEE"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+
+        <ImageView
+            android:id="@+id/movieIcon"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/film_svgrepo_com" />
+    </LinearLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:elevation="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/film" />
+</RelativeLayout>
