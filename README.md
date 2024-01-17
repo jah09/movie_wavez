@@ -1,5 +1,6 @@
 # movie_wavez
-This is a Practice App using the retrofit/REST API in Android Studio(Java). 
+Personal Project. </br>
+Using the retrofit/REST API in Android Studio(Java). 
 
 Search a movie name and fetch data from the API.
 
